@@ -21,7 +21,7 @@ public class MainScreen extends JFrame implements ActionListener
     JTextField txtSearch;
     JTextField txtTeacher,txtClass,txtRoom,txtDate;
     Student[] studentArray;
-
+    LinkedList<Student> studentList = new LinkedList<>();
 
     public MainScreen()
     {
@@ -119,6 +119,7 @@ public class MainScreen extends JFrame implements ActionListener
         });
     }
 
+
     @Override
     public void actionPerformed(ActionEvent actionEvent) // action listner class
     {
@@ -170,7 +171,7 @@ public class MainScreen extends JFrame implements ActionListener
 
     private Student[] GetStudentDetails() // gets all students details and adds to list [student list]
     {
-        LinkedList<Student> studentList = new LinkedList<>();
+
         for (int y = 0; y < textFields.length; y++)
         {
             for (int x = 0; x < textFields[y].length; x++)
