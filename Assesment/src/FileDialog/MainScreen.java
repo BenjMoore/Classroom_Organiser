@@ -34,7 +34,6 @@ public class MainScreen extends JFrame implements ActionListener
         SetupTextfields();
         setVisible(true);
         ChooseFileToLoad();//Initiates file load upon start of application.
-
     }
 
     private void SetupButtons()
@@ -242,7 +241,7 @@ public class MainScreen extends JFrame implements ActionListener
 
             int n = 1;
 
-            txtTeacher.setText(br.readLine());
+            txtTeacher.setText(br.readLine( ));
             txtClass.setText(br.readLine());
             txtRoom.setText(br.readLine());
             txtDate.setText(br.readLine());
